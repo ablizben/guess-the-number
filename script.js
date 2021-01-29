@@ -1,7 +1,5 @@
-'use strict';
-
 //creating our variables
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
 
@@ -43,6 +41,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
 });
 
+
 //on click function for again btn
 document.querySelector('.again').addEventListener('click', function () {
     score = 20;
@@ -51,6 +50,6 @@ document.querySelector('.again').addEventListener('click', function () {
     document.querySelector('.score').textContent = score;
     document.querySelector('.number').textContent = '?';
     document.querySelector('.guess').value = '';
-    document.querySelector('body').style.backgroundColor = '#222';
+    document.querySelector('body').style.backgroundColor = 'rgba(142, 68, 173, 1)';
     document.querySelector('.number').style.width = '15rem';
 });
